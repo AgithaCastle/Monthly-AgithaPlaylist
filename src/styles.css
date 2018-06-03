@@ -1,0 +1,101 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box{
+  width: 100%;
+  padding: 5px 0 5px 0;
+}
+
+/*container ends, header begins*/
+
+header{
+  display: flex;
+  background-color: #fff;
+}
+
+.header-logo{
+  height: 48px;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+
+.header-title{
+  font-size: 1.3em;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.header-title, svg{
+  flex-grow: 1;
+}
+
+/*header ends, nav begins*/
+
+svg{
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  width: 35px;
+  display: inline;
+}
+
+.off-canvas {
+  background-color: #fff0f5;
+  color: #efefef;
+}
+
+.off-canvas-item{
+  color: #1a001a;
+  margin-left: 5px;
+}
+
+nav {
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  /* This trasform moves the drawer off canvas. */
+  -webkit-transform: translate(-300px, 0);
+  transform: translate(-500px, 0);
+  /* Animation to the drawer. */
+  transition: transform 0.3s ease;
+}
+nav.open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*navbar-header ends, posts begins*/
+
+.titles{
+  text-align: center;
+}
+
+.spotify-player-latest, .spotify-player{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+
+.previous-post-one, .previous-post-two, .previous-post-three{
+  background-color: #fff;
+  border: 2px solid;
+  border-color: #f5f5f5;
+}
+
+
+/*posts ends, footer begins*/
+
+.footer{
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid;
+  border-color: #f5f5f5;
+}
