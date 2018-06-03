@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Monthly AgithaPlaylist</title>
+</head>
+
+<nav id="drawer" class="off-canvas">
+  <h2 class="off-canvas-item">Blog</h2>
+  <h2 class="off-canvas-item">Contact</h2>
+</nav>
+
+<body>
+  <main class="container">
+
+    <div class="box header">
+      <header>
+        <img src="MPF1.jpg" class="header-logo" alt="logo">
+        <h1 class="header-title">
+          Monthly AgithaPlaylist
+        </h1>
+        <a id="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+          </svg>
+        </a>
+      </header>
+      </div>
+
+    <div class="box latest-post">
+      <h3 class="titles">AgithaPlaylist 5/2018</h3>
+      <iframe src="https://open.spotify.com/embed?uri=spotify:user:agithacastle:playlist:5IhkT4QhCkPJlKT40XPGHr" width="280" height="360" frameborder="0" allowtransparency="true" allow="encrypted-media" class="spotify-player-latest"></iframe>
+    </div>
+
+    <div class="container" id="previous-posts">
+      <div class="box previous-post-one">
+        <h4 class="titles">AgithaPlaylist 4/2018</h4>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:agithacastle:playlist:3FfqDi4Mex4mJERtpKeZVN&view=coverart" width="275" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"class="spotify-player"></iframe>
+      </div>
+
+      <div class="box previous-post-two">
+        <h4 class="titles">AgithaPlaylist 3/2018</h4>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:agithacastle:playlist:2MtV1CIBWnk3ZW4FLbBwnh&view=coverart" width="275" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"class="spotify-player"></iframe>
+      </div>
+
+      <div class="box previous-post-three">
+        <h4 class="titles">AgithaPlaylist 2/2018</h4>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:agithacastle:playlist:2QjuYfdmEUmsfjSCv8evov&view=coverart" width="275" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"class="spotify-player"></iframe>
+      </div>
+  </div>
+
+  <div class="box footer">
+    <p>Monthly AgithaPlaylist. 2018.</p>
+  </div>
+
+</main>
+</body>
+
+<script>
+
+      /*
+       * Open the drawer when the menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('#drawer');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+</script>
+
+</html>
